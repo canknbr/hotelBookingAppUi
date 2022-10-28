@@ -4,7 +4,7 @@ const categories = ['All', 'Popular', 'Top Rated', 'Featured', 'Luxury'];
 import COLORS from '../data/colors';
 
 const CategoryList = () => {
-  const [selectedCategoryIndex, setSelectedCategoryIndex] = useState(null);
+  const [selectedCategoryIndex, setSelectedCategoryIndex] = useState(0);
   const handlePress = index => {
     setSelectedCategoryIndex(index);
   };

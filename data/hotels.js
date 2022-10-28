@@ -1,7 +1,7 @@
 const hotels = [
   {
     id: '1',
-    name: 'Silver Hotel & SPA',
+    name: 'Miray Hotel & Irmik SPA"sı',
     location: 'Green street,Central district',
     price: 120,
     image: require('../assets/hotel1.jpg'),
