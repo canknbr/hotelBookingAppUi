@@ -1,11 +1,13 @@
-import {View, Text} from 'react-native';
+import {View, Text, SafeAreaView} from 'react-native';
 import React from 'react';
+import Icon from 'react-native-vector-icons/MaterialIcons';
+import COLORS from '../data/colors';
 
 const DetailsScreen = () => {
   return (
-    <View>
+    <SafeAreaView>
       <Text>DetailsScreen</Text>
-    </View>
+    </SafeAreaView>
   );
 };
 
