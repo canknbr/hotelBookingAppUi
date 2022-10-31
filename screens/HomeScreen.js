@@ -62,7 +62,7 @@ const HomeScreen = () => {
       </View>
     );
   };
-  const Card = memo(({hotel, index}) => {
+  const Card = ({hotel, index}) => {
     const inputRange = [
       (index - 1) * cardWidth,
       index * cardWidth,
@@ -122,7 +122,7 @@ const HomeScreen = () => {
         </Animated.View>
       </TouchableOpacity>
     );
-  });
+  };
   const TopHotelCard = ({hotel}) => {
     return (
       <View style={style.topHotelCard}>
@@ -141,8 +141,8 @@ const HomeScreen = () => {
         </View>
         <Image style={style.topHotelCardImage} source={hotel.image} />
         <View style={{paddingVertical: 5, paddingHorizontal: 10}}>
-          <Text style={{fontSize: 10, fontWeight: 'bold'}}>{hotel.name}</Text>
-          <Text style={{fontSize: 7, fontWeight: 'bold', color: COLORS.grey}}>
+          <Text style={{fontSize: 15, fontWeight: 'bold'}}>{hotel.name}</Text>
+          <Text style={{fontSize: 12, fontWeight: 'bold', color: COLORS.grey}}>
             {hotel.location}
           </Text>
         </View>
@@ -297,8 +297,8 @@ const style = StyleSheet.create({
     borderRadius: 15,
   },
   topHotelCard: {
-    height: 120,
-    width: 120,
+    height: 150,
+    width: 130,
     backgroundColor: COLORS.white,
     elevation: 15,
     marginHorizontal: 10,
